@@ -33,7 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <a href="cadastro.php" class="btn btn-primary">Voltar</a>
+                        <a href="index.php" class="btn btn-primary">Voltar</a>
                     </div>
                 </div>
             </div>
