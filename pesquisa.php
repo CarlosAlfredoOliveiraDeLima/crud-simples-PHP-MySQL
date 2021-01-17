@@ -64,7 +64,7 @@
                                         <td>$email</td>
                                         <td>$data_nascimento</td>
                                         <td width=150px>
-                                            <a href='' class='btn btn-success btn-sm'>Editar</a>
+                                            <a href='editar_cadastro.php?id=$cod_pessoa' class='btn btn-success btn-sm'>Editar</a>
                                             <a href='' class='btn btn-danger btn-sm'>Excluir</a>
                                         </td>
                                     </tr>
