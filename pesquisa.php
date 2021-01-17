@@ -96,6 +96,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
                         <input type="hidden" name="id" id="cod_pessoa" value="">
+                        <input type="hidden" name="nome" id="nome_pessoa_a_excluir" value="">
                         <input type="submit" class="btn btn-danger" value="Sim">
                     </div>
                 </form>
@@ -106,6 +107,7 @@
     <script type="text/javascript">
         function pegar_dados(id, nome){
             document.getElementById('nome_pessoa').innerHTML = nome;
+            document.getElementById('nome_pessoa_a_excluir').value = nome;
             document.getElementById('cod_pessoa').value = id;
         }
     </script>
