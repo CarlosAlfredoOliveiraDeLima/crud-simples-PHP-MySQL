@@ -18,27 +18,23 @@
                 <form action="cadastro_script.php" method="post">
                     <div class="form-group">
                         <label for="nome">Nome completo:</label>
-                        <input type="text" class="form-control" name="nome">
+                        <input type="text" class="form-control" name="nome" required>
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço:</label>
-                        <input type="text" class="form-control" name="endereco">
+                        <input type="text" class="form-control" name="endereco" required>
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input type="text" class="form-control" name="telefone">
+                        <input type="text" class="form-control" name="telefone" required>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail:</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="endereco">Endereço:</label>
-                        <input type="email" class="form-control" name="endereco">
+                        <input type="email" class="form-control" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="dt_nasc">Data de Nacimento:</label>
-                        <input type="date" class="form-control" name="dt_nasc">
+                        <input type="date" class="form-control" name="dt_nasc" required>
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-success">
