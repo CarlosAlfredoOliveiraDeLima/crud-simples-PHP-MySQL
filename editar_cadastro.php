@@ -20,7 +20,7 @@
             $id = '';
         }
 
-        $sql = "select * from pessoas where cod_pessoa = $id";
+        $sql = "select * from pessoas where cod_pessoa = '$id'";
         $dados = mysqli_query($conn, $sql);
         $linha = mysqli_fetch_assoc($dados);
     ?>
@@ -51,6 +51,7 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-success" value="Salvar Alterações">
+                        <input type="hidden" name="id" value="<?php echo $linha['cod_pessoa']?>">
                     </div>
                 </form>
                 <a href="index.php" class="btn btn-primary">Voltar para o Início</a>
