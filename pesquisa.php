@@ -13,29 +13,10 @@
 <body>
 <div class="container">
     <div class="row">
-        <?php
-            include 'conexao.php';
+        <div class="col">
+            <h1>Pesquisa</h1>
 
-            $nome = $_POST['nome'];
-            $endereco = $_POST['endereco'];
-            $telefone = $_POST['telefone'];
-            $email = $_POST['email'];
-            $dt_nasc = $_POST['dt_nasc'];
-
-            $sql = "insert into pessoas (nome, endereco, telefone, email, data_nascimento) values ('$nome', '$endereco', '$telefone','$email','$dt_nasc')";
-
-            if (mysqli_query($conn, $sql)){
-                mensagem("$nome cadastrado com sucesso!", "success");
-            }else {
-                mensagem("$nome não cadastrado!", "danger");
-            }
-        ?>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="cadastro.php" class="btn btn-primary">Voltar</a>
-                </div>
-            </div>
+            <a href="index.php" class="btn btn-primary">Voltar para o Início</a>
         </div>
     </div>
 </div>
