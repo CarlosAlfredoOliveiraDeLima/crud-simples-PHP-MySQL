@@ -18,3 +18,8 @@
         echo "<div class='alert alert-$tipo' role='alert'>$texto</div>";
     }
 
+    function mostra_data($data){
+        $data_vetor = explode('-', $data);
+        $data_Br = $data_vetor[2]."/".$data_vetor[1]."/".$data_vetor[0];
+        return $data_Br;
+    }
