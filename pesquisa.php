@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Cadastro</title>
 </head>
@@ -38,6 +39,7 @@
                     <thead>
                         <tr>
                             <th scope="col">Nome</th>
+                            <th scope="col">Foto</th>
                             <th scope="col">Endereço</th>
                             <th scope="col">Telefone</th>
                             <th scope="col">Email</th>
@@ -55,9 +57,11 @@
                                 $email = $linha['email'];
                                 $data_nascimento = $linha['data_nascimento'];
                                 $data_nascimento = mostra_data($data_nascimento);
+                                $foto = $linha['foto'];
 
                                 echo"
                                     <tr>
+                                        <th><img src='imagens_usuarios/$foto' class='lista_foto'></th>
                                         <th scope='row'>$nome</th>
                                         <td>$endereco</td>
                                         <td>$telefone</td>
